@@ -1,0 +1,23 @@
+body {
+  background: #eaeaea;
+}
+
+* {
+  font-family: Lato;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.tree {
+  cursor: pointer;
+  height: 60px;
+  font-size: 3rem;
+}
