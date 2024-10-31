@@ -1,6 +1,7 @@
 const images = {
   treasure: '🎁',
   pumpkin: '🎃',
+  goast:'👻'
 };
 
 // check if the current cell is a treasure
@@ -13,7 +14,7 @@ const isTreasure = (e) => {
 
 // check if the current cell is a tree // ghost
 function isTree(event) {
-  if (event.target.className === 'tree') {
+  if (event.target.className === 'tree' && event.target.innerHTML === images.goast) {
     event.target.innerHTML = images.pumpkin;
     return true;
   }
