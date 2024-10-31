@@ -1,4 +1,5 @@
 import { entry, findTreasure } from './findTreasure.js';
+import { clearAnnouncement } from './treasureHelpers.js';
 
 const forest = document.querySelectorAll('.tree'); // Select all tree elements aka 'ghosts'
 
@@ -11,6 +12,8 @@ function restartGame() {
 
   entry.addEventListener('pointerover', findTreasure);
   hideTreasure();
+  clearAnnouncement();
+
 }
 
 function hideTreasure() {
